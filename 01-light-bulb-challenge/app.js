@@ -14,3 +14,25 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+// Part 1 - Turn On
+// 1. Grab Turn on Button
+const buttonOn = document.getElementById("turnBulbOn");
+// 2. Grab Image lightbulb
+const img = document.getElementById("lightbulb");
+// 3. Write the function that returns the new src light-bulb-on
+function turnLightOn() {
+  img.src = "light-bulb-on.png";
+}
+// 4. Add EventListener for a "click"
+buttonOn.addEventListener("click", turnLightOn);
+
+// Part 2 - Turn Off
+// 1. Grab Turn Off Button
+const buttonOff = document.getElementById("turnBulbOff");
+// 2. Write the function that returns the src to light-bulb-off
+function turnLightOff() {
+  img.src = "light-bulb-off.png";
+}
+// 3. Add EventListener for a "click"
+buttonOff.addEventListener("click", turnLightOff);

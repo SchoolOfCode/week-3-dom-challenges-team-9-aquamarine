@@ -13,3 +13,16 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+// 1. Grab the canvas ID/class and colorPicker
+const canvas = document.getElementById("canvas");
+const colorPicker = document.getElementById("colorPicker");
+// 2. Grab the color value from the colorPicker
+const color = document.querySelector("input[type=color]");
+console.log(color);
+// 3. Make a function that updates the background canvas color to the value from the colorPicker
+function updateColor() {
+  canvas.style.backgroundColor = color;
+}
+// 4. Add EventListener that on click of the colorPicker calls the function
+color.addEventListener("click", updateColor);
