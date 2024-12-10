@@ -13,3 +13,32 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+// 1. We need to select the id star-slider and and make a variable
+const starSlider = document.getElementById("starSlider");
+// 2. grab the id stars and make a variable 
+const stars = document.getElementById("stars");
+// 3. create function that add the star-icon text content as a child of the id stars 
+function toggleStars (){
+
+   
+
+}
+// 4. Within the function we need to add 5 conditionals. for example if the slider is value 4 = 4 stars. 
+
+ // if (starSlider.value == "1"){
+  //     stars.textContent = "★"
+  //  }
+  //  else if (starSlider.value == "2"){
+  //     stars.textContent = "★★"
+
+  //  }
+
+// 5. create event listener that toggles the amount of stars based on which point the slider is 
+starSlider.value.addEventLister("input", toggleStars);
+
+//Other solutions we have seen 
+
+//const sliderNumber = starSlider.value;
+
+//starSlider.textContent = "★" .repeat(slideNumber);

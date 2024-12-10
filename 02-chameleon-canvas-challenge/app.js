@@ -22,7 +22,7 @@ const color = document.querySelector("input[type=color]");
 console.log(color);
 // 3. Make a function that updates the background canvas color to the value from the colorPicker
 function updateColor() {
-  canvas.style.backgroundColor = color;
+  canvas.style.backgroundColor = colorPicker.value;
 }
 // 4. Add EventListener that on click of the colorPicker calls the function
-color.addEventListener("click", updateColor);
+colorPicker.addEventListener("input", updateColor);
