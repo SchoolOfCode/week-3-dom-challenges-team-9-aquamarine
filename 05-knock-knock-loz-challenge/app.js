@@ -13,3 +13,28 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+// Grab the element for both closed doors
+let doors = document.getElementsByClassName("door");
+
+// Create the random function, for either 0 or 1 to trigger
+function randomInt() {
+  return Math.floor(Math.random() * 2);
+}
+
+// Create a function that causes both closed doors to be replaced with either empty door, at random, when clicked
+function doorReveal (){
+  const randomNum = randomInt();
+  if (randomNum === 0){
+    doors[0].src = "door-open-empty.png";
+    doors[1].src = "door-open-loz.png";
+  }
+  else {
+    doors[0].src = "door-open-loz.png";
+    doors[1].src = "door-open-empty.png";
+  }
+}
+
+// Add an event listener for both doors
+doors[0].addEventListener("click", doorReveal);
+doors[1].addEventListener("click", doorReveal);
