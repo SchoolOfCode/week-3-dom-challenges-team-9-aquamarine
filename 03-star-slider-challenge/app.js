@@ -30,7 +30,7 @@ function sliderValue() {
   for (i = 0; i < starSlider.value; i++){
     setStars += "★";
   }
-  stars.textContent = setStars;
+  starIcon[0].textContent = setStars;
 }
 
 
