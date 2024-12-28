@@ -15,3 +15,17 @@ Hint: You can achieve this in multiple ways e.g. via the opacity or style proper
 */
 
 // Place your plan and solution below!
+
+// Grab the image of pixel Chris
+const img = document.getElementById("chrisImage");
+// Listen for a on mouse hover, and trigger a function that will change the image opacity to 0%
+function disappear(){
+  img.style.opacity = 0;
+}
+// listen for when the mouse leaves the area, and trigger a function where the img opacity returns to its original state
+function reappear(){
+  img.style.opacity = 100;
+}
+
+img.addEventListener("mouseover", disappear)
+img.addEventListener("mouseleave", reappear)
