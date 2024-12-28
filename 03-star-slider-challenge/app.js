@@ -13,3 +13,25 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+const sliderContainer = document.getElementsByClassName("slider-container");
+const starSlider = document.getElementById("starSlider");
+const stars = document.getElementById("stars");
+const starIcon = document.getElementsByClassName("star-icon");
+console.log(stars.textContent);
+console.log(starIcon[0]);
+
+
+
+// reacting to the slider increments
+// Create a function that allows starts to populate and reduce based on the slider value
+function sliderValue() {
+  let setStars = "";
+  for (i = 0; i < starSlider.value; i++){
+    setStars += "★";
+  }
+  stars.textContent = setStars;
+}
+
+
+starSlider.addEventListener("input", sliderValue);

@@ -13,3 +13,14 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+const canvas = document.getElementById("canvas");
+const colorPicker = document.getElementById("colorPicker");
+console.log(canvas);
+console.log(colorPicker.value);
+
+function updateColor () {
+  canvas.style.backgroundColor = colorPicker.value;
+}
+
+colorPicker.addEventListener("input", updateColor);
